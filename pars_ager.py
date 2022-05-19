@@ -30,12 +30,11 @@ def get_cart():
 
 
 def get_href():
-    list_url = []
+    list_href = []
     for i in get_cart():
         href = i.find("a").get("href")
-        list_url.append(href)
-    return list_url
-
+        list_href.append(href)
+    return list_href
 
 
 
